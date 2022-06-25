@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sun 2022-06-19 17:07:53 UTC; 8s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 76620 (dockerd)
+      Tasks: 7
+     Memory: 37.5M
+     CGroup: /system.slice/docker.service
+             └─76620 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Jun 19 17:07:53 ip-172-31-88-120 dockerd[76620]: time="2022-06-19T17:07:53.207245698Z" level=warning msg="Your kernel does not support CPU realtime scheduler"
+Jun 19 17:07:53 ip-172-31-88-120 dockerd[76620]: time="2022-06-19T17:07:53.207295744Z" level=warning msg="Your kernel does not support cgroup blkio weight"
+Jun 19 17:07:53 ip-172-31-88-120 dockerd[76620]: time="2022-06-19T17:07:53.207305344Z" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Jun 19 17:07:53 ip-172-31-88-120 dockerd[76620]: time="2022-06-19T17:07:53.207542771Z" level=info msg="Loading containers: start."
+Jun 19 17:07:53 ip-172-31-88-120 dockerd[76620]: time="2022-06-19T17:07:53.442364379Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Jun 19 17:07:53 ip-172-31-88-120 dockerd[76620]: time="2022-06-19T17:07:53.619959559Z" level=info msg="Loading containers: done."
+Jun 19 17:07:53 ip-172-31-88-120 dockerd[76620]: time="2022-06-19T17:07:53.711101812Z" level=info msg="Docker daemon" commit=a89b842 graphdriver(s)=overlay2 version=20.10.17
+Jun 19 17:07:53 ip-172-31-88-120 dockerd[76620]: time="2022-06-19T17:07:53.711414865Z" level=info msg="Daemon has completed initialization"
+Jun 19 17:07:53 ip-172-31-88-120 systemd[1]: Started Docker Application Container Engine.
+Jun 19 17:07:53 ip-172-31-88-120 dockerd[76620]: time="2022-06-19T17:07:53.754147137Z" level=info msg="API listen on /run/docker.sock"
